@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.chandra.hibernate.pojo.Product" table="PRODUCT">
+		<id name="pid" type="int" column="pid">
+			<generator class="assigned" />
+		</id>
+		<property name="pname" column="pname" type="string" />
+		<property name="qty" type="int" />
+		<property name="price" type="double" />
+	</class>
+</hibernate-mapping>
